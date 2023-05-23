@@ -1,0 +1,22 @@
+@import 'variables';
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+
+    :first-child {
+        @include cubeStyles();
+    }
+
+    :nth-child(2) {
+        @include cubeStyles(0, pink);
+    }
+
+    :last-child {
+        @include cubeStyles(16px, silver);
+    }
+}

@@ -1,0 +1,12 @@
+$backgroundColor: burlywood;
+$titleColor: crimson;
+$TextColorOne: darkorchid;
+$TextColortwo: green;
+
+@mixin cubeStyles($radius:4px, $color:salmon) {
+    border-radius: $radius;
+    background-color: $color;
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 4px;
+    height: 164px;
+    width: 164px;
+}
